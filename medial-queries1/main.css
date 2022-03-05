@@ -1,3 +1,170 @@
 body {
   background: blanchedalmond;
 }
+
+* {
+  border: 1px solid teal;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer  {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow:3;
+}
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header {
+    width: 100%;
+  }
+  main, footer, header {
+    margin: 1em;
+  }
+}
+
+
+/*body {
+  background: blanchedalmond;
+  text-align: center;
+  align-items: center;
+}
+
+@media(min-width: 981px){
+  .container{
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+.container div{
+  border: 5px cornflowerblue;
+  padding: 1px;
+  border-style:ridge;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a{
+  flex:1;
+  flex-direction: column;
+  width: 33%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b{
+  align-items: center;
+  flex:3;
+  flex-direction: row;
+  width: 33%;
+  justify-content: space-between;
+}
+
+.c{
+  align-items: center;
+  flex:1;
+  flex-direction: row;
+  width: 33%;
+  justify-content: space-between;
+}
+
+/*
+*{
+  border: 5px solid purple;
+  text-align: center;
+  justify-content: center;
+}
+
+.b{
+  width: 100%;
+  border: 1px solid red;
+  height: 65vh;
+}
+
+.c{
+  width: 100%;
+  border: 1px solid orange;
+  height: 15vh;
+}
+
+@media(min-width: 981px){
+  .container{
+    flex-direction: row;
+  }
+
+.a{
+  width: 100%;
+  border: 1px solid purple;
+  height: 15vh;
+}
+
+.b{
+  height:80vh;
+  width: 75%;
+  border: 1px solid orange;
+}
+
+.c{
+  height: 80vh;
+  width: 23%;
+  border: 1px solid red;
+}
+}
+
+
+
+/*.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container > .a{
+  display: flex;
+  min-height: 33vh;
+  flex-direction:column;
+  justify-content: space-between;
+  flex-grow: 5;
+  width: 100%;
+}
+
+.container > .b{
+  display: flex;
+  min-height: 33vh;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 5;
+  flex-wrap: wrap;
+}
+
+.container > .c{
+  display: flex;
+  min-height: 33vh;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 5;
+  flex-wrap: wrap;
+}
+
+@media(min-width: 981px){
+.container{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+}*/
